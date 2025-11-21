@@ -1,1 +1,13 @@
 /*  your css code here. If applicable */
+/* Optional styling */
+body {
+	font-family: Arial, sans-serif;
+	padding: 30px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 250px;
+	gap: 10px;
+}
+
