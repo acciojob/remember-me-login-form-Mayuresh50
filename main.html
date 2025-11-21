@@ -1,30 +1,27 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<title>Login Form</title>
-	<link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <title>Login Form</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <h1>Login Form</h1>
 
-	<h1>Login Form</h1>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
 
-	<form id="loginForm">
-		<input type="text" id="username" placeholder="Username" />
-		<input type="password" id="password" placeholder="Password" />
+    <label for="checkbox">
+      <input type="checkbox" id="checkbox" /> Remember me.
+    </label>
 
-		<label>
-			<input type="checkbox" id="checkbox" /> Remember me.
-		</label>
+    <input type="submit" id="submit" value="Submit" />
+  </form>
 
-		<input type="submit" id="submit" value="Submit">
-	</form>
+  <!-- Hidden by default; JS will show if credentials exist -->
+  <button id="existing" style="display: none;">Login as existing user</button>
 
-	<button id="existing" style="display: none;">Login as existing user</button>
-
-	<script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
-
 </html>
